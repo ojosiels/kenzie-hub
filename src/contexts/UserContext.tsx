@@ -69,7 +69,7 @@ export const UserProvider = ({ children }: iUserProviderProps): JSX.Element => {
       setUserInfo(res.data.user);
       setTechList(res.data.user.techs);
 
-      toastSuccess("Login efetuado com sucesso");
+      toastSuccess("Login successfully done");
 
       navigate("/home", { replace: true });
     } catch (error) {
