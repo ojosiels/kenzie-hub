@@ -38,23 +38,23 @@ export default function LoginPage() {
         <input
           type="text"
           id="email"
-          placeholder="Digite seu email"
+          placeholder="Type your email here"
           {...register("email")}
         />
         <p>{errors.email?.message}</p>
 
-        <label htmlFor="password">Senha</label>
+        <label htmlFor="password">Password</label>
         <input
           type="password"
           id="password"
-          placeholder="Digite sua senha"
+          placeholder="Type your password here"
           {...register("password")}
         />
         <p>{errors.password?.message}</p>
 
-        <button type="submit">Entrar</button>
-        <p>Ainda não possui uma conta?</p>
-        <Link to="/register">Cadastre-se</Link>
+        <button type="submit">Login</button>
+        <p>Are you not registered yet?</p>
+        <Link to="/register">Register</Link>
       </Form>
     </Container>
   );
